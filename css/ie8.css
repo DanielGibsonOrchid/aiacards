@@ -1,0 +1,22 @@
+
+#main #intro h1 {
+				font-family: "franklin-gothic-urw-n7", "franklin-gothic-urw";
+}
+
+#main #intro h2 {
+				font-family: "franklin-gothic-urw-n4", "franklin-gothic-urw";
+}
+
+#main #form .step fieldset h2 {
+	font-family: "proxima-nova-extra-condensed-n9", "proxima-nova-extra-condensed";
+}
+
+
+#main #form .step fieldset ul li label {
+	font-family: "franklin-gothic-urw-n7", "franklin-gothic-urw";
+}
+
+
+#main #form .step fieldset select {
+	background-image: none;
+}

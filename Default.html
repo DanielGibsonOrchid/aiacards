@@ -1,0 +1,263 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Ecard.Default" EnableViewState="false" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  	<head>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta charset="utf-8" />
+	    <!--[if lt IE 7]><html class="no-js ie6"><![endif]-->
+	    <!--[if IE 7]><html class="no-js ie7"><![endif]-->
+	    <!--[if IE 8]><html class="no-js ie8"><![endif]-->
+	    <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"><!--<![endif]-->
+		
+		<title>Sovereign</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+  		<!-- Mobile viewport optimized: h5bp.com/viewport -->
+  		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0" />
+		
+		<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="img/interface/favicon.ico">
+		<link rel="apple-touch-icon" href="img/interface/apple-touch-icon.png">
+		
+		<!-- CSS: implied media="all" -->
+
+		<link href="css/font-awesome.css" rel="stylesheet" />
+
+      
+		<link rel="stylesheet" href="css/style.css">
+
+		<!--[if lt IE 9]>  
+			<link rel="stylesheet" href="css/ie8.css" />
+		<![endif]--> 
+		
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  		<script src="js/libs/modernizr.2.8.2.js"></script>
+  		
+		<script type="text/javascript" src="//use.typekit.net/rez6pee.js"></script>
+		<script type="text/javascript">		    try { Typekit.load(); } catch (e) { }</script>
+		
+	</head>
+<body>
+		
+		<header>
+			<div>
+				<a href="https://www.sovereign.co.nz/" target="_blank" class="logo">AIA</a>
+				<!-- <img src="img/interface/SovereignLogo.svg" width="190" height="65"/> -->
+
+			</div>
+			<!--<span class="topshine"></span>-->
+		</header>
+
+		<section id="intro">
+
+			<div id="intro-inner"><div class="intro-card"></div>
+				<h1><span>Making</span><br />
+				<span> a </span><br /><span>difference</span>
+				</h1></div>
+			<div id="intro-inner-paragraph">
+				<p>For us to Make a Difference and continue to do the best thing for our customers, it's important to recognise when the people around us are "Doing the Right Thing... in the Right Way... With the Right People".</p>
+				<p><strong>Send one of your colleagues an E-card to show you care and appreciate their commitment!</strong></p>
+			</div>
+		</section>
+
+		<div id="main" role="main">
+
+			<div id="heading-text"><h1>Doing the right thing... in the right way... with the right people</h1></div>
+
+			<form runat="server" id="ecardform" method="post" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="off">
+            <input type="hidden" name="returl" value="thankyou.aspx" />
+			<div id="select" class="clearfix">
+				<div class="lt1">
+					<span><img src="img/interface/ic_Select@2x.png"/><h3>Select</h3></span>
+					<p>One of the AIA <br/>behaviours this person<br/> has demonstrated</p>
+				</div>
+				<div class="rt">
+					<ul class="clearfix values" id="cards">
+						<li class="collaborate">
+							<a href="#" title="collaborate" id="collaborate_ecard"><h4>Doing the right thing</h4></a>
+						</li>
+						<li class="drive">		
+							<a href="#" title="drive" id="drive_ecard"><h4>in the right way</h4></a>
+						</li>
+						<li class="integrity">
+							
+							<a href="#" title="integrity" id="integrity_ecard"><h4>with the right people</h4></a>
+						</li>
+				<!--	<li class="play">
+							
+							<a href="#" title="play" id="play_ecard"><h4>Play</h4></a>
+						</li>
+						<li class="wow last">
+							
+							<a href="#" title="wow" id="wow_ecard"><h4>Wow</h4></a>
+						</li> -->
+					</ul>	
+
+	
+				</div>
+
+
+			</div>
+			<div id="personalise" class="clearfix">
+
+				<div class="lt2">
+					<span><img src="img/interface/ic_Personalise@2x.png"/><h3>Personalise</h3></span>
+					<p>Let this person know what they've done that has<br /> made a difference to you</p>
+
+
+				</div>
+				<script type="text/javascript">
+
+				</script>
+				<div class="rt">
+
+						<div id="taglines" class="clearfix">
+						<ul id="tag-collaborate">
+						<li><span></span>Delivering quality, sustainable results</li>
+						<li><span></span>Being a role model for the industry</li>
+						<li><span></span>Caring for our customers, colleagues and the communities we serve</li>
+						<li><span></span>Furthering social and economic development</li>
+						</ul>
+				
+						<ul id="tag-drive">
+						<li><span></span>Building a legacy</li>
+						<li><span></span>Honouring our principles and keeping promises made</li>
+						<li><span></span>Enchancing AIA's premier reputation through each and every interaction</li>
+                        <li><span></span>Putting company and team before self whilst enjoying our work</li>
+						</ul>
+						<ul id="tag-integrity">
+						<li><span></span>Taking responsibility and being accountable</li>
+						<li><span></span>Empowering and developing our people</li>
+						<li><span></span>Being confident to make a difference</li>
+                        <li><span></span>Being the best you can be</li>
+						</ul>
+
+						<ul id="tag-play">
+						<li><span></span>Thanks for being curious and trying something new...</li>
+						<li><span></span>Thanks for making a great idea happen...</li>
+						<li><span></span>Thanks for making the impossible, possible...</li>
+						<li><span></span>Thanks for experimenting, "Playing" and trying out new ideas...</li>
+                        <li><span></span>Thanks for...</li>
+						</ul>
+
+						<ul id="tag-wow">
+						<li><span></span>You "Wow"-ed me when you...</li>
+						<li><span></span>Thanks for making the ordinary extraordinary...</li>
+                        <li><span></span>Thanks for...</li>
+						</ul>
+					</div>
+					<fieldset class="drive">
+
+						<ul>
+							<li id="reci-name">
+								<label>To</label>
+								<div class="input-holder">
+								<input type="text" id="recipient-name" value="" tabindex="1" name="To" placeholder="Recipient name" title="RECIPIENT NAME" />
+								</div> 
+							</li>
+							<li id="tagline-txt">
+								<input type="text" value="" name="Tagline" onfocus="this.blur()" readonly />
+							</li>
+							<li>
+								<textarea id="comments" name="Comment" placeholder="Type your personalised comments here" rows="5" tabindex="2" ></textarea>
+							</li>
+							<li id="sender-name">
+								<label>From</label>
+								<div class="input-holder">
+								<input type="text" placeholder="Recipient Name" tabindex="3" title="SENDER NAME" id="sender-name_id" value="" name="From">
+								</div> 
+							</li>
+						</ul>
+
+					</fieldset>
+                    <asp:HiddenField ID="HiddenFieldTemplateName" runat="server" />
+							<div class="error-msg">
+								<div class="Tagline-err"></div>
+                                <div class="To-err"></div>
+								<div class="Comment-err"></div>
+								<div class="From-err"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div id="send" class="clearfix">
+
+				<div class="lt3">
+					<span><img src="img/interface/ic_Send@2x.png"/><h3>Send</h3></span>
+					<p>Enter the recipient’s email and manager’s email (if <br />you would like to copy them in) and click send</p>
+
+				</div>
+				<div class="rt">
+					<ul class="clearfix">
+						<li class="recipient">
+								<%--<input type="submit" value="SEND" class="submit" id="btnSend" />--%>
+                                <asp:Button ID="button" runat="server" Text="Send" CssClass="btnSend" tabindex="5" OnClientClick="javascript:SubmitForm();"/>
+								<div class="input-holder">
+								<input type="text" id="recipient-email" tabindex="4" value="" placeholder="Recipient's email" title="RECIPIENT'S EMAIL" name="recipient_email">
+								</div> 
+								<label>@sovereign.co.nz</label>
+                                <div class="input-holder">
+                                    <input type="text" id="cc-email" tabindex="4" value="" placeholder="Manager's email" title="CC'S EMAIL" name="cc_email">
+                                </div>
+                                <label>@sovereign.co.nz</label>
+						</li>
+					</ul>	
+	<div class="error-msg">
+	<div class="recipient_email-err"></div>
+						
+					</div>
+				
+				</div>
+
+			</div>
+	
+		</form>
+			<!-- <footer>
+				<span>&copy; Sovereign Services Limited 2014</span>
+			</footer> -->
+		</div>
+
+
+		<!-- <span class="main-foot"></span> -->
+	
+	<!-- scripts -->
+	<script src="js/libs/jquery-1.11.1.min.js"></script>
+	<script src="js/libs/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/libs/jquery.easing.1.3.js"></script>
+
+	<script src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/libs/additional-methods.min.js"></script>
+		<script src="js/libs/jquery.placeholder.js"></script>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function () {
+	        //InitDefault();
+	        sov_app.init();
+
+	        $('input, textarea').placeholder();
+
+	    });
+
+	    function SubmitForm() {
+	        $('#recipient-name').val(function () {
+	            return this.value.toUpperCase();
+	        })
+
+	        $('#sender-name_id').val(function () {
+
+	            return this.value.toUpperCase();
+	        })
+	    }
+	</script>
+	<!-- end scripts-->
+	
+	</body>
+
+</html>
